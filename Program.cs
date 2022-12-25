@@ -6,3 +6,8 @@
 // [“Hello”, “2”, “world”, “:-)”] > [“2”, “:-)”]
 // [“1234”, “1567”, “-2”, “computer science”] > [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] > []
+
+Console.WriteLine("Введите строки массива через запятую:");                               // Делаем красиво, поясняем ввод
+string[] array1 = Console.ReadLine().Split(",", StringSplitOptions.RemoveEmptyEntries);   // Создаем и вводим массив, (запятые удаляем)
+string[] array2 = new string[array1.Length];                                              // Создаем второй массив для преобразования первого                                                        // Делаем красиво, выводим результат
+int count = 0;           
